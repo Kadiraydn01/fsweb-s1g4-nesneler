@@ -182,6 +182,15 @@ function DegerlendirmeEkle(degerlendirmeler, isim, puan, geribildirim) {
 	3. Fonksiyon şu stringi döndürmeli: "{isim} isimli kişi {puan} puan verdi ve şunları yazdı: {geribildirim}"
 	Örnek: AnahtardanDegerlendirmeAl(degerlendirmeler,0) şunu döndürmeli: "Nalan isimli kişi 5 puan verdi ve şunları yazdı: Mükemmel atmosfer ve mükemmel vegan seçenekleri!"
 */
+function AnahtardanDegerlendirmeAl(degerlendirmeler, indeks) {
+  const degerlendirme = degerlendirmeler[indeks];
+
+  const isim = degerlendirme.isim;
+  const puan = degerlendirme.puan;
+  const geribildirim = degerlendirme.geribildirim;
+
+  return `${isim} isimli kişi ${puan} puan verdi ve şunları yazdı: ${geribildirim}`;
+}
 
 /*  Görev 7:  
 	Diziden en son değerlendirmeyi döndüren adı `SonDegerlendirmeyiAl` olan bir fonksiyon yazın 
