@@ -203,6 +203,18 @@ function AnahtardanDegerlendirmeAl(degerlendirmeler, indeks) {
 	Örnek: SonDegerlendirmeyiAl(degerlendirmeler) şunu döndürmeli: "Reyna isimli kişi 3.5 puan verdi ve şunları yazdı: bu mekan bir harika dostum, yine de garsonun gülümsememesinden puan kırdım".
 	Not: Eğer 4. görevi başarıyla yaptıysanız kişinin geribildirimi boş görünmemeli
 */
+function SonDegerlendirmeyiAl(degerlendirmeler) {
+  const sonDegerlendirme = degerlendirmeler[degerlendirmeler.length - 1];
+
+  const isim = sonDegerlendirme.isim;
+  const puan = sonDegerlendirme.puan;
+  const geribildirim = sonDegerlendirme.geribildirim;
+
+  return `${isim} isimli kişi ${puan} puan verdi ve şunları yazdı: ${geribildirim}`;
+}
+const sonDegerlendirme = SonDegerlendirmeyiAl(degerlendirmeler);
+
+console.log(sonDegerlendirme);
 
 /////////////// BONUS  GÖRVLER////////////////////
 
