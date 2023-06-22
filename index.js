@@ -145,6 +145,13 @@ for (let i = 0; i < degerlendirmeler.length; i++) {
 	1. Bu geribildirimi Reyna'nın değerlendirmesine ekleyin - "bu mekan bir harika dostum, yine de garsonun gülümsememesinden puan kırdım"
 	2. degerlendirmeler dizisini konsolda görüntüleyerek çalışmanızı kontrol edin
 */
+for (let i = 0; i < degerlendirmeler.length; i++) {
+  if (degerlendirmeler[i].isim === "Reyna") {
+    degerlendirmeler[i].geribildirim =
+      "Bu mekan bir harika dostum, yine de garsonun gülümsememesinden puan kırdım";
+    break;
+  }
+}
 
 /*  Görev 5: 
 	isim, puan, geribildirim'i içeren bir değerlendirme nesnesi oluşturup, yeni değerlendirmeyi mevcut dizinin(array) sonuna ekleyip sonuç dizisini döndüren bir fonksiyon tanımlayın. 
