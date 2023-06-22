@@ -134,6 +134,11 @@ const degerlendirmeler = [
 	Yukarıdaki degerlendirmeler dizisini(array) kullanarak:
 	1. Sadece Ahmet'in geribildirimini konsolda görüntüleyin - fonksiyona gerek yok
 */
+for (let i = 0; i < degerlendirmeler.length; i++) {
+  if (degerlendirmeler[i].isim === "Ahmet") {
+    console.log(degerlendirmeler[i].geribildirim);
+  }
+}
 
 /*  Görev 4 (ototest yok):  
 	Reyna'nın geribildirimi girilmemiş! Aşağıdakileri uygulayın: (fonksiyona gerek yok) 
