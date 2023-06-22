@@ -16,6 +16,21 @@ const serpmeKahvalti = {
 	
 	Örnek MenuElemaniOlustur('Cheeseburger', 8, 'Burgerler') şunu döndürmeli: {isim: 'Cheeseburger', fiyat: 8, kategori: 'Burgerler'}
 */
+//const MenuElemaniOlustur = (isim, fiyat, kategori) => {
+/*const menuElemani = {
+    isim: isim,
+    fiyat: fiyat,
+    kategori: kategori,
+  };
+
+  return menuElemani;
+};
+const Kebap = MenuElemaniOlustur("Kebap", "50", "Mangal");
+const corba = MenuElemaniOlustur("Ezogelin", "20", "Çorba");
+const araSicak = MenuElemaniOlustur("Sigara Böreği", "15", "Arasıcak");
+console.log(Kebap);
+console.log(corba);
+console.log(araSicak);/*
 
 const MenuElemaniOlustur = (isim, fiyat, kategori) => {
   const menuElemani = {
