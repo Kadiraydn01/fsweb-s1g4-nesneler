@@ -66,6 +66,24 @@ console.log(cheeseburger);
 	
 	Örnek: burger.indirim("öğretmen") 13.5 döndürmeli ve burger.indirim("diğer") 16.2 döndürmeli
 */
+const burger = {
+  isim: "Burger",
+  fiyat: 18,
+  kategori: "Öğle Yemeği",
+  indirim: function (tip) {
+    if (tip === "öğretmen") {
+      return this.fiyat * 0.75;
+    } else if (tip === "öğrenci") {
+      return this.fiyat * 0.75;
+    } else if (tip === "diğer") {
+      return this.fiyat * 0.9;
+    } else {
+      return this.fiyat;
+    }
+  },
+};
+console.log(burger.indirim("öğretmen"));
+console.log(burger.indirim("diğer"));
 
 ///////////////Değerlendirmeler (MVP)///////////////////
 const degerlendirmeler = [
