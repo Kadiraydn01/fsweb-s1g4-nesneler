@@ -163,6 +163,15 @@ for (let i = 0; i < degerlendirmeler.length; i++) {
 	🌟 ÖRNEK: DegerlendirmeEkle(degerlendirmeler, 'Hurşut', 2, 'Boktan yemekler!') dizinin sonuna şunu eklemeli: {isim: 'Hurşut', puan: 2, geribildirim: 'Boktan yemekler!'}
 	4. Güncellenmiş diziyi döndürecek
 */
+function DegerlendirmeEkle(degerlendirmeler, isim, puan, geribildirim) {
+  const yeniDegerlendirme = {
+    isim: isim,
+    puan: puan,
+    geribildirim: geribildirim,
+  };
+  degerlendirmeler.push(yeniDegerlendirme);
+  return degerlendirmeler;
+}
 
 /*  Görev 6: 
 	Dizideki değerlendirmelerin anahtarına(key,index) bağlı olarak bir değerlendirme döndüren bir fonksiyon yazın
